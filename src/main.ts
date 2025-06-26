@@ -8,10 +8,10 @@ async function bootstrap() {
 
   // Config. do Swagger
   const config = new DocumentBuilder()
-    .setTitle('API de Biblioteca')
+    .setTitle('API de Desafio Backend')
     .setDescription('API para gerenciamento de livros e autores')
     .setVersion('1.0')
-    .addTag('biblioteca')
+    // .addTag('biblioteca')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document); // Rota da documentação: /api
